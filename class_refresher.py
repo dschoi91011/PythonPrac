@@ -67,3 +67,21 @@ anatomy = Head('i drink a lot')
 anatomy.liver()
 anatomy.kidney()
 anatomy.pancreas()
+
+######################
+
+class AAA:
+    def __init__(self, one):
+        self.one = one
+
+    def BBB(self):
+        print('something')
+
+    def CCC(self):
+        print('whatever', self.one)
+
+var1 = AAA('xxx text xxx')
+var1.CCC()
+var1.BBB()
+
+print('Hello world')
