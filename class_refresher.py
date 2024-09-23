@@ -30,3 +30,40 @@ bass = PersonTwo('Bass Choi')
 sharon = PersonTwo('Sharon Lee')
 bass.talk()
 sharon.talk()
+
+#########################
+
+class One:
+    def __init__(self, two):
+        self.two = two
+
+    def three(self):
+        print(self.two)
+
+    def five(self):
+        print('some other text\n')
+
+four = One('anything')
+four.three()
+four.five()
+
+class Head:
+    def __init__(self, toes):
+        self.toes = toes
+
+    def liver(self):
+        print(self.toes, '\n')
+
+    def kidney(self):
+        for x in self.toes:
+            print(x)
+
+    def pancreas(self):
+        jericho = "somethin' for nothin'"
+        for x in jericho:
+            print(x, end = '')
+
+anatomy = Head('i drink a lot')
+anatomy.liver()
+anatomy.kidney()
+anatomy.pancreas()
