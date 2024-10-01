@@ -1,7 +1,9 @@
-#OBJECTIVES:
+
 """
-Create a quiz game that asks user a number of trivia questions. Track score based on correct answers
-given and return percentage score
+Currently, the trivia questions are arbitrary and limited.
+
+Connect to API library so that trivia questions can be randomized and varied.
+
 """
 
 
