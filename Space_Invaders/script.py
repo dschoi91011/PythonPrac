@@ -204,3 +204,25 @@ class Explosion(pygame.sprite.Sprite):
         #if the animation is complete, delte explosion
         if self.index >= len(self.images) - 1 and self.counter >= explosion_speed:
             self.kill()
+
+#create sprite groups
+spaceship_group = pygame.sprite.Group()
+bullet_group = pygame.sprite.Group()
+alien_group = pygame.sprite.Group()
+alien_bullet_group = pygame.sprite.Group()
+explosion_group = pygame.sprite.Group()
+
+
+def create_aliens():
+    #generate aliens
+    for row in range(rows):
+        for item in range(cols):
+            alien = Aliens(100 + item * 100, 100 + row * 70)
+            alien_group.add(alien)
+
+create_aliens()
+
+
+#create player
+spaceship = Spaceship(int(screen_width / 2), screen_height - 100, 3)
+spaceship_group.add(spaceship)
