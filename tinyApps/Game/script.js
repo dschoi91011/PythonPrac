@@ -48,3 +48,66 @@ const keyDown = e => {
 };
 
 document.addEventListener('keydown', keyDown);
+
+const game = () => {
+    // Update snake's position based on the direction of movement
+    posX += moveX;
+    posY += moveY;
+
+    // Clear the canvas
+    ctx.fillStyle = '#000000';
+    ctx.fillRect(0, 0, canv.width, canv.height);
+
+    // Draw the snake
+    ctx.fillStyle = '#2ED9EB';
+
+    // Handle edge wrapping (snake reappears on the opposite side of the canvas)
+    if (posX < 0) posX = tableSize - 1;
+    if (posX > tableSize - 1) posX = 0;
+    if (posY < 0) posY = tableSize - 1;
+    if (posY > tableSize - 1) posY = 0;
+
+    // Check for self-collision
+    for (let i = 0; i < body.length; i++) {
+        ctx.fillRect(body[i].x * gridSize, body[i].y * gridSize, gridSize - 2, gridSize - 2);
+
+        // If the snake's head touches its body, reset the game
+        if (body[i].x === posX && body[i].y === posY) {
+            segments = 5;  // Reset snake length
+            score = 0;     // Reset score
+        }
+    }
+
+    // Move the snake forward (add new position to the body)
+    body.push({ x: posX, y: posY });
+
+    // Remove the tail to keep the snake the right length
+    while (body.length > segments) {
+        body.shift(); // Remove the oldest segment (tail)
+    }
+
+    // Check if the snake has eaten the apple
+    if (appleX === posX && appleY === posY) {
+        score++;  // Increase score
+        segments++;  // Make the snake longer
+        // Move the apple to a new random position
+        appleX = Math.floor(Math.random() * tableSize);
+        appleY = Math.floor(Math.random() * tableSize);
+    }
+
+    // Draw the apple
+    ctx.fillStyle = "#E91E63";
+    ctx.fillRect(appleX * gridSize, appleY * gridSize, gridSize - 2, gridSize - 2);
+
+    // Display score
+    ctx.font = "20px Courier New";
+    ctx.fillStyle = '#C0D72D';
+    ctx.fillText(`Score: ${score}`, 380, 20);
+
+    // Display control instructions
+    ctx.fillText(`ᐊA ᐃW Sᐁ Dᐅ`, 180, 495);
+
+    // Continuously call the game function based on the selected level speed
+    setTimeout(game, level);
+};
+
