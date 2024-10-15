@@ -111,3 +111,33 @@ const game = () => {
     setTimeout(game, level);
 };
 
+const setLevel = selection => {
+    options.childNodes.forEach(option => {
+        option.style.color = option.innerHTML === selection ? '#C0D72D' : '#000000';
+    });
+
+    switch (selection) {
+        case 'easy':
+            level = 180;
+            break;
+        case 'medium':
+            level = 120;
+            break;
+        case 'hard':
+            level = 85;
+            break;
+        case 'beast':
+            level = 25;
+            break;
+        default:
+            level = 150;
+            break;
+    }
+};
+
+gameLevels.forEach(lev => {
+    const button = document.createElement('button');
+    button.innerHTML = lev;
+    button.onclick = () => setLevel(lev);
+    options.append(button);
+});
