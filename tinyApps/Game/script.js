@@ -25,3 +25,26 @@ const generateGame = () => {
     // Append canvas to display area
     display.append(canv);
 };
+
+const keyDown = e => {
+    switch (e.keyCode) {
+        case 65: // Left (A)
+            moveX = -1;
+            moveY = 0;
+            break;
+        case 87: // Up (W)
+            moveX = 0;
+            moveY = -1;
+            break;
+        case 68: // Right (D)
+            moveX = 1;
+            moveY = 0;
+            break;
+        case 83: // Down (S)
+            moveX = 0;
+            moveY = 1;
+            break;
+    }
+};
+
+document.addEventListener('keydown', keyDown);
