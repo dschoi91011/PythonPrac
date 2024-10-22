@@ -76,3 +76,14 @@ const fetchAIResponse = async (message) => {
         return 'Sorry, something went wrong. Please try again later.';
     }
 };
+
+const renderChat = () => {
+    chatHistory.innerHTML = ''; // Clear chat history
+    chatMessages.forEach(message => {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add(message.sender === 'user' ? 'user-message' : 'ai-message');
+        messageDiv.textContent = message.text; // Set the message text
+        chatHistory.appendChild(messageDiv); // Append message to chat history
+    });
+    chatHistory.scrollTop = chatHistory.scrollHeight; // Scroll to the latest message
+};
