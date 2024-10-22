@@ -32,3 +32,24 @@ const generateChat = () => {
 
     document.getElementById('profile').style.color = `#FDD835`;
 };
+
+let chatMessages = []; // To store all chat messages
+
+// Add a new message to the chat
+const addMessage = (text, sender) => {
+    chatMessages.push({ text, sender }); // Add the message to the chat history
+    renderChat(); // Re-render the chat window
+};
+
+// Handle form submission
+chatForm.addEventListener('submit', async e => {
+    e.preventDefault(); // Prevent the page from reloading
+    const userMessage = userInput.value.trim(); // Get the user's message
+
+    if (userMessage === '') return; // Do nothing if the input is empty
+    addMessage(userMessage, 'user'); // Add user message to chat
+    userInput.value = ''; // Clear the input field
+
+    const aiResponse = await fetchAIResponse(userMessage); // Fetch the AI's response
+    addMessage(aiResponse, 'ai'); // Add AI response to chat
+});
