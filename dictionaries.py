@@ -55,3 +55,29 @@ if not state:
 #get a city with a default value
     city = cities.get('TX', 'Does not exist')
     print(f"THe city for the state 'TX' is: {city}")
+
+
+names = {'Bass': 'Choi',
+         'Sharon': 'Lee',
+         'Chris': 'Kim',
+         'Amy': 'Manns',
+         'Mimi': 'Chung'}
+
+names['first'] = 'last'
+names['one'] = 'two'
+
+print(names['Bass'])
+
+print(names['first'])
+
+for first, last in list(names.items()):
+    print(f"\n{first} {last}")
+
+for a, b in list(names.items()):
+    print('-', b, a)
+
+for a, b in list(names.items()):
+    print(b, b)
+    print(a)
+    print('\n')
+
