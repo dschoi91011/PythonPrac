@@ -96,3 +96,19 @@ elif people <= dogs:
 
 elif people == dogs:
     print("People are dogs.")
+
+
+Turn An Excel Sheet Into An Interactive Dashboard Using Python(Streamlit):
+https://www.youtube.com/watch?v=Sb0A9i6d320&ab_channel=CodingIsFun
+
+Creating a Zelda style game in Python [with some Dark Souls elements]:
+https://www.youtube.com/watch?v=QU1pPzEGrqw&ab_channel=ClearCode
+
+Create a Snake-Game using Turtle in Python:
+https://www.geeksforgeeks.org/create-a-snake-game-using-turtle-in-python/
+
+Programming with Mosh Python Tutorial - Python Full Course for Beginners:
+https://www.youtube.com/watch?v=_uQrJ0TkZlc&ab_channel=ProgrammingwithMosh
+
+Learn Python by Building Five Games - Full Course:
+https://www.youtube.com/watch?v=XGf2GcyHPhc&ab_channel=freeCodeCamp.org
