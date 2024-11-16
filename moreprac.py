@@ -96,3 +96,66 @@ print(f"I have {len(cars)} cars in my list.")
 #exponents = [value**2 for value in range(5)]
 #print(exponents)
 """
+
+"""
+for value in range(20):
+	numerals = list(range(20))
+	sum(numerals)
+print(f"{sum(numerals)}")
+
+cube = []
+for value in range(10):
+	cube.append(value**3)
+	print(cube)
+
+straight = ['ten', 'jack', 'queen', 'king', 'ace']
+print(straight[:3])
+print(straight[1:3])
+print(straight[3:])
+
+print("\nIf I'm dealt an Ace and a King, I would need the following by the river for a straight:")
+for win in straight[:3]:
+	print(win.title())
+
+firstList = ['alpha', 'bravo', 'charlie']
+secondList = firstList[:]
+print(firstList)
+secondList.append('delta')
+print(secondList)
+
+print("I will now count my chickens:")
+print("Hens", 25 + 30 / 6)
+print("Roosters", 100 - 25 * 3 % 4)
+print("Is it true that 3 + 2 < 5 - 7?")
+print(3 + 2< 5 - 7)
+print("What is 3 + 2?", 3 + 2)
+print("WHat is 5-7?", 5 - 7)
+print("Oh, that's why it's False.")
+print("Is it greater?", 5>-2)
+print("Is it greater or equal?", 5>=-2)
+print("Is it less or equal?", 5 <= -2)
+
+someList = ['able', 'baker', 'charlie']
+someList.append('denver')
+print(someList)
+
+print('The number', 4 + 4, 'is a factor of 2.')
+
+cars_owned = ['volvo', 'acura', 'toyota', 'infiniti']
+'subaru' in cars_owned
+'infiniti' in cars_owned
+car_owned = 'subaru'
+print(car_owned == 'subaru')
+print(car_owned == 'infiniti')
+
+sodas = ['coke', 'sprite', 'pepsi']
+for soda in sodas:
+	if soda == 'coke':
+		print(f"{sodas[0].title()} is my favorite soda.")
+	elif soda == 'sprite':
+		print("Sprite is okay too.")
+	elif soda == 'pepsi':
+		print("Pepsi is a poor replacement for coke.")
+	else:
+		print("I don't drink that.")
+"""
