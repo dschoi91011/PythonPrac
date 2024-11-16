@@ -67,3 +67,32 @@ print(cars)
 cars.sort(reverse=True)
 print(cars)
 """
+
+#LOOPS -------------------------------------------------------------------------------------
+"""
+cars = ['bmw', 'audi', 'infiniti']
+favorite = cars[2]
+print(f"I have {len(cars)} cars in my list.")
+#for car in cars:
+#	print(car)
+#	print(f"The manufacturer {car.title()} builds great cars.\n")
+#print(f"I like the {favorite.title()} most.\n")
+#for value in range(6):
+#	print(value)
+#	numbers = list(range(5))
+#	print(numbers)
+
+#exponents = []
+#for value in range(10):
+#	exponents.append(value**2)
+#	print(exponents)
+
+#add_numbers = list(range(0,16,3))
+#print(add_numbers)
+
+#digits = [1, 3, 5, 6, 7, 9, 0]
+#print(f"The following include: \n\t{min(digits)} \n\t{max(digits)} \n\t{sum(digits)}")
+
+#exponents = [value**2 for value in range(5)]
+#print(exponents)
+"""
