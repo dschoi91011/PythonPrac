@@ -159,3 +159,18 @@ for soda in sodas:
 	else:
 		print("I don't drink that.")
 """
+
+name = input("What is your name? ")
+print("Hello " + name)
+
+listA = ['one', 'two', 'three']
+listB = ['three', 'four', 'five']
+
+for elementB in listB:
+	if elementB in listA:
+		print("There is an overlap.")
+	else:
+		print(f"{elementB} does not exist in listA.")
+
+
+print("\nDone.")
