@@ -23,3 +23,14 @@ paddle_b.shapesize(stretch_wid=5, stretch_len=1)
 paddle_b.color("white")
 paddle_b.penup()
 paddle_b.goto(+350, 0)
+
+#Ball
+ball = turtle.Turtle()
+ball.speed(0)
+ball.shape("square") 
+ball.color("white")
+ball.penup()
+ball.goto(0, 0)
+
+ball.dx = 0.1
+ball.dy = 0.1
