@@ -55,3 +55,11 @@ def paddle_b_down():
     y = paddle_b.ycor()
     y -= 10
     paddle_b.sety(y)
+
+#Keyboard binding
+wn.listen() #in Turtle, this is to listen for keyboard input
+wn.onkeypress(paddle_a_up, "w")
+wn.onkeypress(paddle_a_down, "s")
+wn.onkeypress(paddle_b_up, "Up")
+wn.onkeypress(paddle_b_down, "Down")
+
