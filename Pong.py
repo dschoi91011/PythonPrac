@@ -63,3 +63,27 @@ wn.onkeypress(paddle_a_down, "s")
 wn.onkeypress(paddle_b_up, "Up")
 wn.onkeypress(paddle_b_down, "Down")
 
+#Main game loop
+while True:
+    wn.update()
+
+    #Ball movement
+    ball.setx(ball.xcor() + ball.dx)
+    ball.sety(ball.ycor() + ball.dy)
+
+    #Border check
+    if ball.ycor() > 290:
+        ball.sety(290)
+        ball.dy *= -1 #reverses direction of ball
+
+    if ball.ycor() < -290:
+        ball.sety(-290)
+        ball.dy *= -1
+
+    if ball.xcor() > 390:
+        ball.goto(0, 0)
+        ball.dx *= -1
+
+    if ball.xcor() < -390:
+        ball.goto(0, 0)
+        ball.dx *= -1
