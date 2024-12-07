@@ -34,3 +34,24 @@ ball.goto(0, 0)
 
 ball.dx = 0.1
 ball.dy = 0.1
+
+#Functions
+def paddle_a_up():
+    y = paddle_a.ycor() #'ycor' is specific to Turtle. returns 'y' coordinate
+    y += 10 #adds 20 pixels to 'y' coordinate
+    paddle_a.sety(y) #sets paddle_a to new 'y' coordinate
+
+def paddle_a_down():
+    y = paddle_a.ycor()
+    y -= 10
+    paddle_a.sety(y)
+
+def paddle_b_up():
+    y = paddle_b.ycor()
+    y += 10
+    paddle_b.sety(y)
+
+def paddle_b_down():
+    y = paddle_b.ycor()
+    y -= 10
+    paddle_b.sety(y)
