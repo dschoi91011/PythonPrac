@@ -308,3 +308,13 @@ print("Hello world")
 greetings("Bob")
 print("Good bye")
 """
+
+#Write a function that generates "apple, bananas, tofu, and cats." Should
+#work on any given list.
+spam = ['apple', 'bananas', 'tofu', 'cats', 'poo']
+
+for item in spam:
+    print(item, end = ", ")
+    if item == spam[-2]:
+        break
+print(f"and {spam[-1]}")
