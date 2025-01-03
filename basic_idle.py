@@ -270,6 +270,41 @@ for x in range(4):
     for y in range(3):
         print(f'({x, y}')
 """
-    
+"""
+numbers = [2, 2, 2, 2, 5]
+for x_count in numbers:
+       output = ""                  # OR output = "x" * x_count
+       for count in range(x_count):
+           output += "x"
+       print(output)
+print(f"{'#' *30}\n")
 
-e
+numbers = [2, 4, 7, 4, 5, 2, 2, 1, 19]
+max = numbers[0]
+for number in numbers:
+    if number > max:
+        max = number
+print(max)
+
+phone = input("Phone: ")
+
+phonebook = {"1":"one", "2":"two", "3":"three", "4":"four"}
+output = ""
+for digit in phone:
+       output = phonebook.get(digit)
+       print(output)
+
+def math():
+       print("I can math good")
+       print(100 * 10)
+
+def greetings(name):
+       print(f"Hi {name}")
+       math()
+       print("It's nice to meet you")
+              
+
+print("Hello world")
+greetings("Bob")
+print("Good bye")
+"""
