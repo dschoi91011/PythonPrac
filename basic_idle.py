@@ -318,3 +318,37 @@ for item in spam:
     if item == spam[-2]:
         break
 print(f"and {spam[-1]}")
+
+#define new type called "Person"
+#this object should have a 'name' attribute (variable)
+    #attribute:   variables of a class that are shared b/w all of its instances
+#this object should have a 'talk' method (function)
+    #method:   function associated with obj/classes
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+        
+    def talk(self):
+        print("talk")
+        
+        
+john = Person("John Smith")
+print(john.name)
+
+john.talk()
+
+######################
+
+class PersonTwo:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"Hi, my name is {self.name}")
+
+
+bass = PersonTwo("Bass Choi")
+sharon = PersonTwo("Sharon Lee")
+bass.talk()
+sharon.talk()
