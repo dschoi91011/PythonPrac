@@ -457,4 +457,42 @@ birth_year = int(input("What year were you born? "))
 age = (f"You are {str(2022 - birth_year)} years old.")
 print(age)
 
+#Prac app: Ask for user weight (lbs), convert to kg
+raw_weight = input("Weight(lbs): ")
+converted_weight = int(raw_weight) * 0.45
+print(converted_weight, "kg")
+
+#Prac app: formatting strings
+first = 'John'
+last = 'Smith'
+print(f"{first} [{last}] is a coder.")
+
+course = "Python for beginners"
+print(course.upper())
+print(course)
+print(course.find('P'))
+print(len(course[0:]))
+print('Python' in course)
+print(course.replace('for', '4'))
+
+import math
+print(math.ceil(3.5))
+
+price = 1000000
+has_good_credit = False
+if has_good_credit == True:
+    down_payment = price * 0.1
+else:
+    down_payment = price * 0.2
+print(f"Down payment: ${down_payment}")
+
+weight = int(input("Weight: "))
+conversion = input("(L)bs or (K)g: ")
+if conversion.upper() == "L":
+    unit = weight // 0.45
+    print(f"Your weight is {unit}kg")
+elif conversion.upper() == "K":
+    print(f"Your weight is {weight * 0.45}lbs")
+else:
+    print("That is not valid")
 """
