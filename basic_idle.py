@@ -544,3 +544,43 @@ for items in numbers:
     print(output)
 print('\n')
 """
+
+i = 1
+while i <= 3:
+    print("Meow")
+    i += 1
+print("Shut up, cat!")
+    
+#for cat in range(3):
+#    print("Meow")
+#print("Shut up, cat!")
+
+
+
+
+#PRAC APP: CAR GAME
+"""
+car_started = False
+while True:                                     # or command != "quit":
+    command = input(">").lower()
+    if command == "start":
+        if car_started:
+            print("Car has already started.")
+        else:
+            car_started = True
+            print("Car started... Let's go!")
+    elif command == "stop":
+        if not car_started:
+            print("Car has already stopped.")
+        else:
+            car_started = False
+            print("Car has stopped.")
+    elif command == "help":
+        print("start - to start car \nstop - to stop car \nquit - to quit")        ")
+    elif command == "quit":
+        print("Good bye")
+        break
+    else:
+        print("I don't understand that command.")
+        
+"""
