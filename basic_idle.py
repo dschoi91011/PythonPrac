@@ -352,3 +352,82 @@ bass = PersonTwo("Bass Choi")
 sharon = PersonTwo("Sharon Lee")
 bass.talk()
 sharon.talk()
+
+"""
+birthyear = input("Enter birth year: ")
+age = 2022 - int(birthyear)
+print(age)
+
+name = input("What is your name? ")
+print(f"Hello, {name.title()}")
+
+
+#int() is integer
+#float() is decimal
+#str() is string, or alphabet/words/characters/
+
+first = input("First number to be added: ")
+second = input("\nSecond number to be added: ")
+sum = int(first) + float(second)
+print("Sum: " + str(sum))
+
+#OR
+
+first = int(input("First to be added: "))        #conversion of one variable type to another
+second = float(input("Second to be added: "))
+sum = str(first + second)
+print("Sum: " + sum)
+
+#OR
+
+first = int(input("First: "))
+second = int(input("Second: "))
+sum = first + second
+print("Sum: " + str(sum))
+
+
+weight = float(input("Weight: "))
+unit = input("(K)g or (L)bs: ")
+if unit.upper() == "K":
+    conversion = weight / 2.2
+    print("Weight in Lbs: " + str(conversion))
+else:
+    conversion = weight * 2.2
+    print("Weight in Kg: " + str(conversion))
+
+numbers = [1, 2, 3, 4, 5, 6]
+print(numbers)
+numbers.append(0)
+numbers.insert(1,20)
+print(numbers)
+
+for item in range(0, 20, 3):
+    print(item)
+
+dictionary = {"first_name":"sharon", "last_name":"lee", "age":36, "residence":"pasadena"}
+firstName = dictionary["first_name"].title()
+lastName = dictionary["last_name"].title()
+age = dictionary["age"]
+residence = dictionary["residence"].title()
+print("Name: " + firstName, lastName)
+print("Age: " + str(age))
+print("Resdience: " + residence)
+
+favorite_numbers = {'Sharon': '9', 'Bass': '13', 'John': '7', 'Max': '4'}
+friends = ['Sharon', 'Bass']
+for name in favorite_numbers:
+    print(f"Hi {name.title()}")
+    if name in friends:
+        number = favorite_numbers[name].title()
+        print(f"\t{name.title()}, I see your favorite number is {number}.")
+if 'Jack' not in favorite_numbers.keys():
+              print("Jack, please take our poll.")
+print("The following numbers have been mentioned:")
+for number in favorite_numbers.values():
+    print(number)
+
+
+sharon = favorite_numbers['Sharon']
+print("\nSharon's favorite number is " + str(sharon) + ".")
+
+"""
