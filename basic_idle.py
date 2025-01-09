@@ -430,4 +430,31 @@ for number in favorite_numbers.values():
 sharon = favorite_numbers['Sharon']
 print("\nSharon's favorite number is " + str(sharon) + ".")
 
+user_0 = {
+    'username': 'dschoi',
+    'first': 'daniel',
+    'last': 'choi'
+    }
+realName = ['first', 'last']
+for key, value in user_0.items():
+    print(f"\nKey: {key}")
+    if key in realName:
+        name = user_0[key].title()
+        print(f"Value: {name}")
+    else:
+        print(f"Value: {value}")
+
+
+name = input('What is your name? ')
+color = input('What is your favorite color? ')
+print(name.title() + " likes " + color)
+print(f"{name.title()} likes {color}.")
+
+
+
+#Prac app: Ask the year of birth, calculate age
+birth_year = int(input("What year were you born? "))
+age = (f"You are {str(2022 - birth_year)} years old.")
+print(age)
+
 """
