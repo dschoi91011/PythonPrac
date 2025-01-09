@@ -495,4 +495,52 @@ elif conversion.upper() == "K":
     print(f"Your weight is {weight * 0.45}lbs")
 else:
     print("That is not valid")
+
+i = 3
+while i < 20:
+    print(i)
+    i += 2
+    if i < 18:
+        print("Not yet")
+    else:
+        print("Done\n")
+
+i = 1
+while i <= 5:
+    print("*" * 2)
+    i = i + 1
+print("Done")
+
+
+#Guessing game
+answer = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input("Guess: "))
+    guess_count += 1
+    if guess == answer:
+        print("You won")
+        break
+else:
+    print("Game over")
+
+
+total = 0
+prices = [10, 20, 30]
+for items in prices:
+    total += items
+print(total)
+
+for x in range(4):
+    for y in range(3):
+        print(f'({x, y})')
+
+numbers = [5, 2, 5, 2, 2]
+for items in numbers:
+    output = ''
+    for count in range(items):
+        output += 'x'
+    print(output)
+print('\n')
 """
