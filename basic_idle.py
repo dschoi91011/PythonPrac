@@ -669,6 +669,26 @@ for item in spam:
         break
 print(f"and {spam[-1]}")
 
+"""
+with open("Testrun.xlsx", "r") as my_file:
+    data = my_file.read()
+
+print(data)
+
+"""
+
+with open("tempclass.txt", "r") as my_file:
+    data = my_file.read()
+
+print(data, "\n")
+
+rows = data.split("\n")
+print(rows)
+
+for row in rows:
+    info = row.split(",")
+    print(info)
+
 
 
     
