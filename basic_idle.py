@@ -689,6 +689,17 @@ for row in rows:
     info = row.split(",")
     print(info)
 
+"""
+spam = 0
+if spam == 10:
+    print('eggs')           # All of this is skipped b/c
+    if spam > 5:            # the initial "IF" statement,
+        print('bacon')      # "spam == 10" is FALSE
+    else:                   #
+        print('ham')        #
+    print('spam')           #
+print('spam')
+"""
 
 
     
