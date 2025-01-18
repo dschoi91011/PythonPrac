@@ -701,5 +701,38 @@ if spam == 10:
 print('spam')
 """
 
+import random, sys
+hello_iter = 0
+howdy_iter = 0
+greetings_iter = 0
+
+while True:
+    print("\nAll iterations have not cycled. Press (r)")
+    redo = input()
+    if redo == 'r':
+        randomNumber = random.randint(1, 3)
+
+        if randomNumber == 1:
+            print("Hello")
+            if hello_iter < 1:
+                hello_iter += 1
+        elif randomNumber == 2:
+            print("Howdy")
+            if howdy_iter < 1:
+                howdy_iter += 1
+        elif randomNumber == 3:
+            print("Greetings")
+            if greetings_iter < 1:
+                greetings_iter += 1
+                
+    else:
+        print("Press (r)")
+
+    if hello_iter == 1 and howdy_iter == 1 and greetings_iter == 1:
+        print("\nAll iterations complete. Goodbye")
+        sys.exit()
+        
+        
+
 
     
