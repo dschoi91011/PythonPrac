@@ -16,3 +16,10 @@ while True:   #main loop
         else:
             print("Type r, p, s, or q")
 
+#player choice
+    if playerChoice == 'r':
+        print('ROCK vs...')
+    elif playerChoice == 'p':
+        print('PAPER vs...')
+    elif playerChoice == 's':
+        print('SCISSORS vs...')
