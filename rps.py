@@ -23,3 +23,15 @@ while True:   #main loop
         print('PAPER vs...')
     elif playerChoice == 's':
         print('SCISSORS vs...')
+
+#computer choice
+    randomNum = random.randint(1, 3)
+    if randomNum == 1:
+        computerChoice = 'r'
+        print('ROCK')
+    elif randomNum == 2:
+        computerChoice = 'p'
+        print('PAPER')
+    elif randomNum == 3:
+        computerChoice = 's'
+        print('SCISSORS')
