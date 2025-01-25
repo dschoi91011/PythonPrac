@@ -35,3 +35,27 @@ while True:   #main loop
     elif randomNum == 3:
         computerChoice = 's'
         print('SCISSORS')
+
+#display/record score
+    if playerChoice == computerChoice:
+        print("It's a tie!")
+        Ties += 1
+    elif playerChoice == 'r' and computerChoice == 'p':
+        print("You lose")
+        Losses += 1
+    elif playerChoice == 'r' and computerChoice == 's':
+        print("You win")
+        Wins += 1
+    elif playerChoice == 'p' and computerChoice == 'r':
+        print("You win")
+        Wins += 1
+    elif playerChoice == 'p' and computerChoice == 's':
+        print("You lose")
+        Losses += 1
+    elif playerChoice == 's' and computerChoice == 'p':
+        print("You win")
+        Wins += 1
+    elif playerChoice == 's' and computerChoice == 'r':
+        print("You lose")
+        Losses += 1
+
