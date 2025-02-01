@@ -44,3 +44,33 @@ You live in {lives}. Not sure where that is.
 And you have a {computer} computer. Nice.
 """)
 """
+#What is this?
+#I have no idea what this is
+#     What about a haiku?
+#Dunno.
+
+
+from sys import argv
+script, input_file = argv
+
+
+def print_all(f):     #'f' is a file
+    print(f.read())
+
+def rewind(f):
+    f.seek(0)
+    #f.seek(0) will move to the start of the file, (0) being the index
+                      
+
+def print_a_line(line_count, f):
+    print(line_count, f.readline())
+    #f.readline() will read a line from the file and move the reader
+    #to just after the \n that ends that line
+    
+
+
+current_file = open(input_file)
+
+print("First let's print the whole file:\n")
+print_all(current_file)
+"""
