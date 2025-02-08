@@ -150,3 +150,34 @@ print_two_again("Daniel", "Choi")
 print_one("First!")
 print_none()
 
+def cheese_and_crackers(cheeseCount, boxesOfCrackers):
+    print(f"You have {cheeseCount} cheeses!")
+    print(f"You have {boxesOfCrackers} boxes of crackers!")
+    print("Man, that's enough for a party!")
+    print("Get a blanket.\n")
+
+def favoriteNumber():
+    number = int(input("What is your favorite number? "))
+    print(f"Well, I hope that {number} is also your lucky number.")
+
+
+
+print("We can just give the function numbers directly:")
+cheese_and_crackers(20, 30)
+
+print("OR, we can use variables from our script:")
+cheese_amount = 10
+crackers_amount = 50
+
+cheese_and_crackers(cheese_amount, crackers_amount)
+
+print("We can even do math inside too:")
+cheese_and_crackers(10 + 20, 5 + 6)
+
+print("And we can combine the two, variables and math:")
+cheese_and_crackers(cheese_amount + 100, crackers_amount + 1000)
+
+
+favoriteNumber()
+
+
