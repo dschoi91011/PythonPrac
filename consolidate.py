@@ -180,4 +180,27 @@ cheese_and_crackers(cheese_amount + 100, crackers_amount + 1000)
 
 favoriteNumber()
 
+from sys import argv
+script, input_file = argv
 
+def print_all(f):     #'f' is a file
+    print(f.read())
+
+def rewind(f):
+    f.seek(0)
+    #f.seek(0) will move to the start of the file, (0) being the index
+                      
+
+def print_a_line(line_count, f):
+    print(line_count, f.readline())
+    #f.readline() will read a line from the file and move the reader
+    #to just after the \n that ends that line
+
+    #readline() has an in-built code taht scans each byte of the file
+    #until it finds a \n character, then stops reading to return what
+    #it found so far.
+
+    #there are empty lines b/w the lines in the file b/c readline()
+    #returns the \n that's in the file at the end of that line.
+    #add end="" at the end of print function calls to avoid adding
+    #double \n to every line
