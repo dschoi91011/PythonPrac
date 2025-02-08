@@ -242,3 +242,29 @@ def divide(a, b):
 
 
 print("Let's do some math with just functions")
+
+age = add(30, 5)   
+height = subtract(78, 4)   
+weight = multiply(90, 2)   
+iq = divide(100, 2)        
+
+print(f"Age = {age}, Height = {height}, Weight = {weight}, IQ = {iq}")
+
+print("Here's a puzzle")
+
+what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
+print("THat becomes: ", what, "Can yo do it by hand?\n")
+
+#Learn the RETURN function
+
+def testrun(a, b):
+    print(a - b)
+    return a + b
+
+    
+testrun(30, 12)
+
+
+withoutReturn = testrun(30, 23)
+
+print(withoutReturn)
