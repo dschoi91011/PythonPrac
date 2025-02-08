@@ -131,3 +131,22 @@ in_file.close()     #if you wrote indata = open(from_file).read(),
                     #get rid of in_file.close(). Python will
                     #auto-close that line of code once it runs
 """
+def print_two(*args):
+    arg1, arg2 = args
+    print(f"arg1: {arg1}, arg2: {arg2}")
+
+def print_two_again(arg1, arg2):
+    print(f"arg1: {arg1}, arg2: {arg2}")
+
+def print_one(arg1):
+    print(f"arg1: {arg1}")
+
+def print_none():
+    print("I got nothin'.")
+
+
+print_two("Sharon", "Bass")
+print_two_again("Daniel", "Choi")
+print_one("First!")
+print_none()
+
