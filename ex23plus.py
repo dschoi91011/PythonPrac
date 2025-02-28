@@ -341,3 +341,32 @@ print("We can also do that this way:")
 formula = secret_formula(start_point)
 # this is an easy way to apply a list to a format string
 print("We'd have {} beans, {} jars, and {} crates.".format(*formula))
+people = 20
+cats = 30
+dogs = 15
+
+
+if people < cats:
+    print("Too many cats! The world is doomed!")
+
+elif people > cats:
+    print("Not many cats! The world is saved!")
+
+elif people < dogs:
+    print("The world is drooled on!")
+
+elif people > dogs:
+    print("The world is dry!")
+
+
+dogs += 5
+
+if people >= dogs:
+    print("People are greater than or equal to dogs.")
+
+elif people <= dogs:
+    print("People are less than or equal to dogs.")
+
+
+elif people == dogs:
+    print("People are dogs.")
