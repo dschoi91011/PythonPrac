@@ -661,3 +661,43 @@ for a, b in list(names.items()):
     print(a)
     print('\n')
 
+class Song(object):
+
+    def __init__(self, lyrics):
+        self.lyrics = lyrics
+
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print(line)
+
+
+bulls_on_parade = Song(["They rally around the family",
+                        "With pockts full of shells"])
+
+test_run = Song("Whatever")
+
+test_run2 = Song(["Whatever"])
+
+
+
+test_run2.sing_me_a_song()
+print('\n')
+test_run.sing_me_a_song()
+print('\n')
+bulls_on_parade.sing_me_a_song()
+print('\n')
+
+###########
+
+#class XXX:
+
+#    def __init__(self, ZZZ):
+#        self.ZZZ = ZZZ
+        
+#    def YYY(one):
+#        print(f"text text text {self.ZZZ}")
+        
+#variable = XXX("arguement")
+#variable.YYY()
+
+
