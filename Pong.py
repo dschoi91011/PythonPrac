@@ -96,3 +96,26 @@ while True:
     if ball.xcor() < -340 and ball.xcor() > -350 and ball.ycor() < paddle_a.ycor() + 50 and ball.ycor() > paddle_a.ycor() - 50:
         ball.setx(-340)
         ball.dx *= -1
+
+#DEFINING VARIABLES: Collatz method
+
+while True:
+    cont = input("Cont? ")
+    if cont == "y":
+            
+        def collatz(number):
+            while number != 1:
+                if number % 2 == 0:
+                    number = number // 2
+                    print(number)
+                elif number % 2 == 1:
+                    number = number * 3 + 1
+                    print(number)
+                        
+        number = int(input("Enter: "))
+
+        collatz(number) #This will execute program
+         
+
+    else:
+        break
