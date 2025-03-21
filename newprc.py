@@ -35,3 +35,35 @@
 #print(f"My favorite number is: \n{favorite_number}")
 
 #LISTS -------------------------------------------------------------------------------------
+"""
+trump_cards = ['aces', 'kings', 'queens', 'jacks']
+print(trump_cards[0])
+print(trump_cards[0].title())
+message = f"A pair of {trump_cards[0].title()} is a powerful starting hand."
+print(message)
+
+fast_food = ['mcdonalds', 'jack', 'del taco']
+print(fast_food)
+fast_food[1] = 'wendys'
+print(fast_food)
+fast_food.append('jack')
+print(fast_food)
+fast_food.insert(2, 'sonics')
+print(fast_food)
+del fast_food[1]
+print(fast_food)
+
+ate_it = fast_food.pop(0)
+print(fast_food)
+print(ate_it)
+print(f"I have way too much {ate_it.title()} for my own good.")
+
+fast_food.remove('jack')
+print(fast_food)
+
+cars = ['bmw','infiniti', 'honda', 'toyota', 'volvo']
+cars.sort()
+print(cars)
+cars.sort(reverse=True)
+print(cars)
+"""
