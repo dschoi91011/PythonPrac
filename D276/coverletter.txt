@@ -1,0 +1,18 @@
+
+•   Content Organization:
+-   header
+-   nav
+    ~   links to other documents in the portfolio
+-   main
+-   section
+-   footer
+-   article
+
+
+•   Text and Content:
+-   span
+-   paragraph or paragraphs
+-   horizontal rule
+-   strong
+-   em
+-   mark
