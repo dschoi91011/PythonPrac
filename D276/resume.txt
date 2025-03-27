@@ -1,0 +1,19 @@
+
+•   Content Organization:
+-   nav
+        ~   links to other documents in the portfolio
+-   article
+
+
+•   Text and Content:
+-   span
+-   div to contain the current date
+
+
+
+•   Interactive and Scripting:
+-   script
+~   JavaScript to populate the date (div)
+~   JavaScript to write to the console
+
+ 
