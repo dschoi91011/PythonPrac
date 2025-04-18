@@ -26,7 +26,25 @@
         </video>
         <h2>Contact Me:</h2>
         <form action="https://wp.zybooks.com/form-viewer.php" method="post">
-            
+            <div class="form-upper">
+                <label for="first-name">First Name:</label>
+                <input type="text" class="input-info" id="first-name" name="first_name" required>
+    
+                <label for="last-name">Last Name:</label>
+                <input type="text" class="input-info" id="last-name" name="last_name" required>
+    
+                <label for="company-name">Company Name:</label>
+                <input type="text" class="input-info" id="company-name" name="company_name">
+    
+                <label for="email">Email Address:</label>
+                <input type="email" class="input-info" id="email" name="email" required>
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" class="input-info" id="phone" name="phone" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" cols="30" required></textarea><br>
+            </div>
         </form>
     </main>
 </body>
