@@ -69,3 +69,22 @@ p{
     font-size: 16px;
     margin-bottom: 10px;
 }
+
+/* Table */
+section{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
