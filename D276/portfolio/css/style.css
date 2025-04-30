@@ -27,3 +27,45 @@ header{
     display: block;
     padding-bottom: 10px;
 }
+
+main{
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: auto;
+}
+
+#current-date{
+    color: #555;
+    font-weight: bold;
+}
+
+nav a{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+button:hover, input[type="submit"]:hover{
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
