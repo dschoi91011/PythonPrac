@@ -105,3 +105,38 @@ li{
     height: 500px;
     width: auto;
 }
+
+/* Form */
+.form-upper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.input-info{
+    padding: 5px;
+}
+
+.contact-radio{
+    padding-left: 10px;
+}
+
+#contact-method{
+    margin-top: 20px;
+    height: 30px;
+    width: 80px;
+    font-size: 15px;
+}
+
+.submit-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#submit-btn{
+    font-size: 15px;
+    height: 40px;
+    width: 200px;
+}
