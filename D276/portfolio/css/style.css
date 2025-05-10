@@ -88,3 +88,12 @@ th, td{
     text-align: left;
 }
 
+/* Lists */
+ul{
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li{
+    margin-bottom: 5px;
+}
