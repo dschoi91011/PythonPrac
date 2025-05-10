@@ -97,3 +97,11 @@ ul{
 li{
     margin-bottom: 5px;
 }
+
+#goals-video{
+    display: block;
+    margin: auto;
+    padding-bottom: 50px;
+    height: 500px;
+    width: auto;
+}
